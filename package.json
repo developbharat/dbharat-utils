@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "cli": "yarn workspace @dbharat-utils/cli"
   },
   "devDependencies": {
