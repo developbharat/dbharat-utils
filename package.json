@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "cli": "yarn workspace @dbharat-utils/cli"
+    "generator-cli": "yarn workspace @dbharat-utils/generator-cli"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

@@ -1,0 +1,19 @@
+name: Generator CLI Publish
+
+on:
+  push:
+    branches:
+      - master
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 15
+      - run: yarn install
+      - run: yarn bootstrap
+      - run: yarn generator-cli test
